@@ -1,5 +1,6 @@
 package;
 
+#if flixel
 import flixel.FlxSprite;
 import flixel.graphics.FlxGraphic;
 import flixel.util.FlxColor;
@@ -77,3 +78,4 @@ class VideoSprite extends FlxSprite
 	public function playVideo(Path:String, Loop:Bool = false, PauseMusic:Bool = false):Void
 		bitmap.playVideo(Path, Loop, PauseMusic);
 }
+#end
