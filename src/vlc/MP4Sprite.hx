@@ -1,5 +1,6 @@
 package vlc;
 
+#if flixel
 import flixel.FlxSprite;
 import flixel.graphics.FlxGraphic;
 import flixel.util.FlxColor;
@@ -78,3 +79,4 @@ class MP4Sprite extends FlxSprite
 	public function playVideo(Path:String, Loop:Bool = false, PauseMusic:Bool = false):Void
 		bitmap.playVideo(Path, Loop, PauseMusic);
 }
+#end
