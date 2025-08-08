@@ -63,7 +63,7 @@ class VideoSprite extends FlxSprite
 				setGraphicSize(canvasWidth, canvasHeight);
 				updateHitbox();
 
-				var size:Float = (fillScreen ? Math.max : Math.min)(sprite.scale.x, sprite.scale.y);
+				var size:Float = (fillScreen ? Math.max : Math.min)(scale.x, scale.y);
 				scale.set(size, size); // lol
 			}
 			oneTime = true;
